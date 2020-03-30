@@ -158,7 +158,7 @@ def ftp_init():
     ftp.set_debuglevel(0)
     # 這樣才可以用中文
     ftp.encoding = 'utf-8'
-    ftp.connect("203.75.190.122", 21)
+    ftp.connect("IP", port)
     ftp.login("account", "password")
     welcomemsg = ftp.getwelcome()
 
