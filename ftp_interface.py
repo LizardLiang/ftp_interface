@@ -159,7 +159,7 @@ def ftp_init():
     # 這樣才可以用中文
     ftp.encoding = 'utf-8'
     ftp.connect("203.75.190.122", 21)
-    ftp.login("administrator", "12437181")
+    ftp.login("account", "password")
     welcomemsg = ftp.getwelcome()
 
     if "220" not in welcomemsg:
